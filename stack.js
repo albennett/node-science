@@ -11,6 +11,7 @@ class Stack {
   constructor (size) {
     this.head = null
     this.maxSize = size
+    this.length = 0;
   }
 
   push (item) {
@@ -33,6 +34,7 @@ class Stack {
     const toRemove = this.head
 
     this.head = toRemove.next
+    this.length--
     return toRemove
   }
 
